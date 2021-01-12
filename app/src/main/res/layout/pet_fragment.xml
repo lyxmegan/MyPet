@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+   <ImageView
+       android:id="@+id/dog_cat_pic"
+       android:layout_marginTop="50dp"
+       android:layout_width="300dp"
+       android:layout_height="150dp"
+       android:layout_gravity="center"
+       android:src="@drawable/dog_cat_pic"
+       android:visibility="gone"
+       />
+
+   <TextView
+       android:id="@+id/no_pet"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="30dp"
+       android:text="You haven't added any pets"
+       android:textSize="25sp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:visibility="gone"/>
+
+   <TextView
+       android:id="@+id/no_pet_2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Add each of your pets and create their profile."
+      android:layout_gravity="center"
+      android:textSize="15sp"
+      android:layout_marginTop="20dp"
+      android:textColor="#D3D3D3"
+       android:visibility="gone"
+      />
+   <ScrollView
+       android:id="@+id/SCROLLER_ID"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fillViewport="true">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/petListRV"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+         <Button
+             android:id="@+id/addPet"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center|bottom"
+             android:layout_marginTop="200dp"
+             android:background="@drawable/custom_rounded_corner"
+             android:text="Add a pet"
+             android:textColor="@color/black"
+             android:layout_marginBottom="10dp"/>
+
+      </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>

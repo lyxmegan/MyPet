@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/createToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create To Do"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/clearBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_round_corner2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_round_corner2"/>
+    </LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My To-do List"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/noToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You haven't created a To Do yet."
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textColor="#D3D3D3"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

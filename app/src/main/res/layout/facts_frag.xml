@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/clickHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on the fact to get new fact!"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardMaxElevation="2dp"
+                card_view:cardElevation="1dp"
+                android:layout_gravity="center_horizontal"
+                card_view:cardBackgroundColor="#FF8C00"
+                android:background="?android:attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/catFact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No facts"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/shareButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_baseline_share_white_24"
+                android:background="#3498DB" />
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardMaxElevation="2dp"
+                    card_view:cardElevation="1dp"
+                    android:layout_gravity="center_horizontal"
+                    card_view:cardBackgroundColor="#FF8C00"
+                    android:background="?android:attr/selectableItemBackground"
+                    >
+
+                    <TextView
+                        android:id="@+id/dogFact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:text="No facts"
+                        android:textSize="20sp"
+                        android:clickable="true"
+                        android:scrollbars="vertical"
+                        android:layout_margin="5dp"
+                        />
+            </androidx.cardview.widget.CardView>
+            <ImageButton
+                android:id="@+id/shareButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_white_24"
+                android:layout_gravity="right|end"
+                android:layout_margin="5dp"
+                android:background="#3498DB"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Click the share button to share fun facts with your family or friends!"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="380dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pet_2" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

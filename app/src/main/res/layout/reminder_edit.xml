@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a pet: "
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_spinner"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/reminder_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description for the reminder"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The date picked: "
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/pickedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="mm/dd/yyyy"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The time picked: "
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/pickedTime"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/teal_700"
+            android:text="hh:mm"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_weight="2"/>
+        <ImageView
+            android:id="@+id/pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send the notification"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            />
+        <CheckBox
+            android:id="@+id/notificationCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/additional_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Additional notes"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reminderSaveBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_round_corner2"
+            android:text="Save" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/reminderChangeBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_round_corner2"
+            android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>

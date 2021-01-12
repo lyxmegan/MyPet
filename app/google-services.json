@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353955935667",
+    "firebase_url": "https://mypet-63277.firebaseio.com",
+    "project_id": "mypet-63277",
+    "storage_bucket": "mypet-63277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353955935667:android:c62e6c01de3fcc398707c6",
+        "android_client_info": {
+          "package_name": "edu.utap.mypet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353955935667-l0irhq85fa9gi2p2og22uiokoqeg244b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTCTDHKrYzXDfE2EX3Z29_QMIIjjBliII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353955935667-l0irhq85fa9gi2p2og22uiokoqeg244b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pets"
+        android:icon="@drawable/ic_baseline_pets_24_orange"
+        android:title="@string/pets" />
+
+    <item
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/ic_baseline_notifications_24_orange"
+        android:title="@string/to_do" />
+
+    <item
+        android:id="@+id/navigation_reminders"
+        android:icon="@drawable/ic_baseline_calendar_today_24_orange"
+        android:title="@string/reminders" />
+
+    <item
+        android:id="@+id/navigation_facts"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="@string/fun_facts" />
+</menu>

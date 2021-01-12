@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_pets">
+
+    <fragment
+        android:id="@+id/navigation_pets"
+        android:name="edu.utap.mypet.petEdit.PetsFragment"
+        android:label="@string/pets"
+        />
+
+    <fragment
+        android:id="@+id/navigation_todo"
+        android:name="edu.utap.mypet.todoList.TodoFragment"
+        android:label="@string/to_do"
+        />
+
+    <fragment
+        android:id="@+id/navigation_reminders"
+        android:name="edu.utap.mypet.reminders.ReminderFragment"
+        android:label="@string/reminders"
+       />
+
+    <fragment
+        android:id="@+id/navigation_facts"
+        android:name="edu.utap.mypet.funFacts.FactsFragment"
+        android:label="@string/fun_facts"
+        />
+
+</navigation>

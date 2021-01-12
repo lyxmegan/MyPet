@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ImageView
+        android:id="@+id/no_reminder_image"
+        android:layout_marginTop="15dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/reminder_pic"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/no_reminder_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="You haven't added any reminders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reminderListRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addReminderBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/custom_rounded_corner"
+                android:text="Add a reminder"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
